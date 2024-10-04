@@ -34,4 +34,4 @@ Und denken Sie daran: Innovation ist gut, aber Sie sollten sich nicht verzetteln
 - Starten Sie mit einem Minimum Viable Product (MVP) und erweitern Sie es bei Bedarf.
 - Achten Sie auf die Machbarkeit in der verfügbaren Zeit und mit den Ressourcen.
 - Nutzen Sie frühzeitig Feedback, um sicherzustellen, dass Ihre Lösung relevant ist.
-- Diskutieren Sie möglich Projektideen möglichst früh mit dem Beraterteam.
+- Diskutieren Sie mögliche Projektideen möglichst früh mit dem Beraterteam.

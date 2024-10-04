@@ -75,8 +75,8 @@ cssClass:
 
 #### U13: Als Kunde möchte ich bei Problemen oder Fehlermeldungen klare und hilfreiche Hinweise bekommen, um zu verstehen, was schiefgelaufen ist.
 ##### Akzeptanzkriterien
-  - Wenn es beim Upload oder der Optimierung zu Fehlern kommt, werden die Fehlermeldungen in einfacher und verständlicher Sprache angezeigt.
-  - Die Fehlermeldung enthält, wenn möglich, Vorschläge zur Lösung des Problems (z.B. Dateiformat nicht unterstützt, Datei zu groß).
+  - Wenn es beim Upload oder der Optimierung zu Fehlern kommt, werden die Fehlermeldungen in einfacher und verständlicher Sprache angezeigt. (z.B. Dateiformat nicht unterstützt, Datei zu groß).
+  - Die Fehlermeldung enthält, wenn möglich, Vorschläge zur Lösung des Problems
 
 #### U14: Als Kunde möchte ich mich durch klare visuelle Hinweise (z.B. Symbole, Farben) sicher durch den Upload-Prozess leiten lassen, damit ich keine wichtigen Schritte verpasse.
 ##### Akzeptanzkriterien
