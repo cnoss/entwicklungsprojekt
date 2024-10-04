@@ -1,0 +1,75 @@
+/* Work Result
+############################################################################ */
+.work-result {
+  h1.title{
+    font-size: var(--size-m);
+  }
+
+  h2.subtitle,
+  h2.subtitle a{
+    margin-top: calc(var(--size-m) * -1);
+    font-size: var(--size-m);
+  }
+
+  h2.title{
+    font-weight: var(--fw-medium);
+  }
+
+  h3.subtitle{
+    color: var(--color-dark);
+
+
+    @media only screen and (width >= 40rem) {
+      font-size: var(--size-l);
+    }
+  }
+
+  main{
+    padding-bottom: var(--size-xl);
+  }
+
+  dl.metadata a{
+    border-bottom: none;
+  }
+
+  .work-result-thumbnail{
+    max-width: calc(var(--max-width-content) /2);
+    margin-bottom: var(--size-xl);
+    background-color: var(--color-darken-light);
+    
+    @media screen and (width <= 40rem){
+      max-width: 100%;
+    }
+
+    img{
+      display: block;
+      mix-blend-mode: darken;
+    }
+  }
+
+  .work-result-avatar{
+    display: none;
+    width: 50%;
+  }
+
+  @media screen and (width > 100rem){
+    .work-result-main{
+      display: grid;
+      gap: var(--size-xl);
+      grid-row: auto;
+      grid-template-areas: 
+            "title title"
+            "left right";
+      grid-template-columns: var(--max-width-content) 1fr;
+
+      .work-result-header{
+        grid-area: title;
+      }
+
+      .metadata-wrap{
+        grid-area: right;
+      }
+
+    }
+  }
+}

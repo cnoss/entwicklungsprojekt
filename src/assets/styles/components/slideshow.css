@@ -1,0 +1,129 @@
+/* Slideshow
+############################################################################ */
+
+.slideshow {
+  display: grid;
+  gap: 1;
+  grid-template-columns: repeat(auto-fill, var(--size-image-thumbnail));
+
+  @media screen and (width <= 40rem) {
+    grid-template-columns: 1fr;
+    
+  }
+
+  li{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    background-color: var(--color-darken-light);
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    button{
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1/1;
+    }
+
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: darken  ;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Image Popover
+############################################################################ */
+
+.image-popover{
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+
+  .image-popover-content{
+    display: block;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+
+  .next-btn,
+  .prev-btn,
+  .close-btn{
+    position: absolute;
+    border: none;
+    color: var(--color-lightest);
+    line-height: 0;
+    transition: all var(--tr-fast);
+
+    span{
+      border: none;
+      color: var(--interaction-color);
+      font-size: var(--size-l);
+
+      &:hover{
+        color: var(--color-lightest);
+        cursor: pointer;
+        transform: translateX(15%);
+      }
+    }
+  }
+
+  button.close-btn{
+    top: var(--size-m);
+    right: var(--size-m);
+    
+    span{
+      font-size: var(--size-xl);
+
+      &:hover{
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  button.next-btn{
+    top: 50%;
+    right: var(--size-m);
+    transform: translateY(-50%);
+  }
+
+  button.prev-btn{
+    top: 50%;
+    left: var(--size-m);
+    transform: translateY(-50%);
+
+    span{
+      &:hover{
+        transform: translateX(-15%);
+      }
+    }
+  }
+  
+  &::backdrop {
+    background: rgb(0 0 0 / 95%);
+  }
+  
+  &:popover-open {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all var(--tr-medium);
+
+    @starting-style {
+      opacity: 0;
+    }
+
+    .close-btn{
+      transform: rotate(90deg);
+    }
+  }
+
+
+}

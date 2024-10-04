@@ -1,0 +1,78 @@
+--- 
+layout: default 
+---
+
+<section class="work-result-main">
+  <header class="work-result-header">
+    {% if page.thumbnail and page.thumbnail != '' %}
+    <figure class="work-result-thumbnail">
+      <img src="../{{page.thumbnail}}" alt="{{page.title}}" />
+    </figure>
+    {% endif %}
+
+    <h2 class="title">{{page.title}}</h2>
+    <h3 class="subtitle">{{page.type}} von {{page.author}}</h3>
+  </header>
+
+  <div class="metadata-wrap">
+    <dl class="metadata">
+      <dt>Keywords</dt>
+      <dd>
+        <ul class="keywords">
+        {% for list-item in page.keywords %}<li>{{list-item}}</li>{% endfor %}
+        </ul>
+      </dd>
+      <dt>Datum</dt>
+      <dd>{{page.date | date: "%d.%m.%Y"}}</dd>
+
+      {% if page.result-pdf and page.result-pdf != '' %}
+      <dt>PDF</dt>
+      <dd><a href="{{page.result-pdf}}">Download</a></dd>
+      {% endif %}
+
+      {% if page.result-website and page.result-website != '' %}
+      <dt>Website zur Arbeit</dt>
+      <dd><a href="{{page.result-website}}">{{page.result-website}}</a></dd>
+      {% endif %}
+
+      {% if page.result-repo and page.result-repo != '' %}
+      <dt>Repository zur Arbeit</dt>
+      <dd><a href="{{page.result-repo}}">{{page.result-repo}}</a></dd>
+      {% endif %}
+
+    </dl>
+
+    {% if page.avatar and page.avatar != '' %}
+    <figure class="work-result-avatar">
+      <img src="../{{page.avatar}}" alt="{{page.author}}">
+    </figure>
+    {% endif %}
+
+  </div>
+
+  <div class="work-result-content">
+    {{ content | markdownify }}
+  </div>
+
+</section>
+
+{% if page.slideshow and page.slideshow == true %}
+{% assign path = page.url | relative_url | split: "/" %}
+{% assign path = path | pop  %}
+{% assign path = path | join: "/" %}
+
+<section>
+  <h3>Bilder aus dem Projektverlauf</h3>
+  <ul class="slideshow is-full-width" data-js-slideshow-json="{{page.related-folder}}/04-results/images/metadata.json" data-js-slideshow-folder="{{path}}/{{page.related-folder}}/04-results">
+  </ul>
+</section>
+{% endif %}
+
+{% if page.final-presentation and page.final-presentation != '' %}
+<section>
+  <h3>Abschlussvideo</h3>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.final-presentation}}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</section>
+{% endif %}

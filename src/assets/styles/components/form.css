@@ -1,0 +1,65 @@
+/* stylelint-disable no-descending-specificity */
+
+
+/* Form
+############################################################################ */
+.form{
+  input,
+  textarea {
+    color: var(--color-lighten);
+    font-family: var(--ff-primary);
+  }
+
+  label {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    color: var(--color-darkest);
+    font-size: var(--s);
+    transform: translateY(calc(var(--size-m) * -1.75));
+    transition: all var(--tr-fast) ease;
+  }
+
+  .form-row {
+    position: relative;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+    width: 100%;
+    padding: var(--size-s) var(--size-s) var(--size-s) 0;
+    border: none;
+    border-bottom: solid 1px var(--decoration-color);
+    background-color: transparent;
+    font-size: var(--size-m);
+    outline: none;
+  }
+
+  input[type="text"]:focus,
+  input[type="fon"]:focus,
+  input[type="email"]:focus,
+  textarea:focus{
+    padding: var(--size-s);
+    border-bottom-color: var(--darker);
+    background-color: var(--color-lighten);
+  }
+
+  input[type="text"]:focus~label,
+  input[type="tel"]:focus~label,
+  input[type="email"]:focus~label,
+  textarea:focus~label,
+  input.filled + label {
+    font-size: var(--size-s);
+    transform: translateY(calc(var(--size-m) * -0.1));
+  }
+
+  button[type="submit"] {
+    margin-top: var(--size-l);
+  }
+
+}
