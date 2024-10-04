@@ -238,7 +238,7 @@ module.exports = function (eleventyConfig) {
       includes: '_components',
       input: 'src',
       layouts: '_layouts',
-      output: 'public',
+      output: 'docs',
     },
     pathPrefix: pathPrefix,
     markdownTemplateEngine: 'njk',
