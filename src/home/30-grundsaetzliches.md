@@ -9,7 +9,7 @@ cssClass: text
 ## Wissenswertes
 
 ### Audits
-Die Audits «meiner» Teams finden immer vor Ort und immer in der gesamten Perspektivgruppe statt. Allokation Sie daher bitte ausreichend Zeit und Geduld für diese Termine. <i class="icofont-nerd-smile"></i>
+Die Audits «meiner» Teams finden immer vor Ort und immer in der gesamten Perspektivgruppe statt. Allozieren Sie daher bitte ausreichend Zeit und Geduld für diese Termine. <i class="icofont-nerd-smile"></i>
 
 ### Architecture Decision Records
 
@@ -25,7 +25,7 @@ Typische Elemente eines ADR:
 - **Begründung** (Warum wurde diese Entscheidung getroffen?)
 - **Konsequenzen** (Welche Auswirkungen hat die Entscheidung?)
 
-Ein **Template für ADRs** kannst finden Sie hier:
+Ein **Template für ADRs** finden Sie hier:
 [ADR Template](https://adr.github.io/madr/) 
 
 Das ist eine gute Grundlage, um eine konsistente und vollständige Dokumentation von Architekturentscheidungen sicherzustellen.
@@ -39,8 +39,8 @@ Nutzen Sie Backlogs für Ihre Tasks, User Stories und Issues. Ein **Backlog** is
 
 Das Backlog wird kontinuierlich gepflegt und priorisiert, um sicherzustellen, dass das Team an den wichtigsten und wertvollsten Aufgaben arbeitet. Es wird in der Regel vom Product Owner verwaltet und dient als Leitfaden für die Entwicklungsarbeit.
 
-Ein **Template für ein Backlog** finden Sie hier:
-[Backlog Template](https://www.productplan.com/templates/product-backlog-template/) 
+Ein Infovideo zum Erstellen von einem **Backlog** finden Sie hier:
+[Building your backlog with Projects](https://www.youtube.com/watch?v=qT0VMdx7vuI) 
 
 ### Sprintplanung
 
@@ -52,7 +52,7 @@ Wichtige Schritte der Sprintplanung:
 3. **Schätzung des Arbeitsaufwands**: Aufgaben werden in ihrer Komplexität geschätzt (z.B. durch Story Points oder Schätzung in Stunden).
 4. **Verteilung der Aufgaben**: Teammitglieder übernehmen konkrete Aufgaben zur Umsetzung.
 
-Sprintplanung sorgt dafür, dass das Team fokussiert und effizient an den wichtigsten Features arbeitet.
+Die Sprintplanung sorgt dafür, dass das Team fokussiert und effizient an den wichtigsten Features arbeitet.
 
 Ein hilfreicher Link zur Sprintplanung:
 [Atlassian Sprint Planning Guide](https://www.atlassian.com/agile/scrum/sprint-planning)
