@@ -23,6 +23,8 @@ body {
 blockquote {
   padding: var(--size-m);
   border-left: solid var(--border-width) var(--color-yellow);
+  margin-top: var(--size-m);
+  margin-bottom: var(--size-m);
   background-color: var(--color-darken-light);
 }
 
@@ -115,8 +117,10 @@ em {
   font-weight: var(--fw-normal);
 }
 
-ul:not([class]) {
+ul, ol:not([class]) {
   padding: 0;
+  margin-top: var(--size-m);
+  margin-bottom: var(--size-m);
 }
 
 ul:not([class]) li {

@@ -30,15 +30,19 @@ exports.render = function (data) {
   const blocks = data.blocks ? renderBlocks(data) : '';
 
   const contentFolder = data.folder;
-  const contentFiles = data.collections.all
-    .filter(post => post.inputPath.includes(contentFolder))  // Filter by folder
-    .sort((a, b) => { // Sort by filename
+
+  const contentFiles = data.collections.all.filter(item => {
+    const segment = `/${contentFolder}/`; // Das Suchsegment vorbereiten
+    return item.page.inputPath.includes(segment); // Prüfen, ob der Pfad das Segment enthält
+  });
+  
+  const sortedContentFiles = contentFiles.sort((a, b) => { // Sort by filename
     const nameA = a.inputPath.split('/').pop().toLowerCase();  // Get the filename and convert to lowercase
     const nameB = b.inputPath.split('/').pop().toLowerCase();  // Same for the second file
     return nameA.localeCompare(nameB);  // Compare filenames
   });
   
-  const contentBlocks = contentFiles.map(file => {
+  const contentBlocks = sortedContentFiles.map(file => {
     const snippet = file.data.snippet;
 
     const attributes = {
