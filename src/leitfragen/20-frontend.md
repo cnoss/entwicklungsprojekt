@@ -15,7 +15,6 @@ cssClass: text
 - Wie wird das Frontend mit den anderen Systemkomponenten kommunizieren?
 - Welche Maßnahmen werden zur Optimierung der Ladezeiten und Performance des Frontends ergriffen?
 - Wie wird die Benutzerführung im Interface gestaltet?
-- Welches Designkonzept liegt zu grunde?
-- Wie findet sich das Konzept im Frontend wieder?
+- Welches Designkonzept liegt zugrunde und findet sich das Konzept im Frontend wieder?
 - Welche Designsysteme oder UI-Bibliotheken werden genutzt, um das Frontend konsistent zu gestalten?
 - Welcher Systematik folgen Raster, Farben, Schriften, Propotionen, Layout, Interaktionen und Übergänge?
