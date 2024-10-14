@@ -30,6 +30,12 @@ Ein **Template für ADRs** finden Sie hier:
 
 Das ist eine gute Grundlage, um eine konsistente und vollständige Dokumentation von Architekturentscheidungen sicherzustellen.
 
+Hier ein paar Beispiele auf dem Master Beiboot Projkt:
+- [Video Procssing ](https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2024-gutentag2012/blob/main/docs/adr/0001-video-processing.md)
+- [SvelteKit als Static Site Generator](https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2023-finnge/blob/main/docs/adrs/004-sveltekit.md)
+- [Deployment und Hosting](https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2022-mweiershaeuser/blob/main/adr/0004-deployment-und-hosting.md)
+- [Frontend Tooling - Vite](https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2022-twobiers/blob/main/adr/5_frontend_tooling_vite.md)
+
 ### Backlogs
 
 Nutzen Sie Backlogs für Ihre Tasks, User Stories und Issues. Ein **Backlog** ist eine **priorisierte Liste von Aufgaben**, Anforderungen oder Features, die in einem Projekt erledigt werden müssen. In agilen Projekten dient das Backlog als zentrale Sammelstelle für alle gewünschten Änderungen und neuen Funktionen. Es gibt zwei Hauptarten von Backlogs:
