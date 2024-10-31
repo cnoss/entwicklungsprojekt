@@ -14,11 +14,11 @@ cssClass:
   - Ich kann Parameter wie maximale Dateigröße, Auflösung und Komprimierungsgrad in der Admin-Oberfläche einstellen.
   - Diese Parameter werden automatisch auf die hochgeladenen Dateien angewendet, ohne dass der Kunde manuell eingreifen muss.
 
-#### U2: Als Admin möchte ich personalisierte Links generieren können, damit meine Kunden direkt Zugriff auf das Tool haben.
+#### U2: Als Admin möchte ich personalisierte Zugriffslinks generieren können, damit meine Kunden direkt Zugriff auf das Tool haben.
 ##### Akzeptanzkriterien
-- Ich kann einen personalisierten Link für jeden Kunden generieren.
-- Dieser Link enthält die voreingestellten Optimierungsparameter und wird automatisch erstellt.
-- Der Link kann nur von dem entsprechenden Kunden genutzt werden und ist für eine begrenzte Zeit gültig.
+- Ich kann einen personalisierten Zugriffslink für jeden Kunden generieren.
+- Dieser Zugriffslink enthält die voreingestellten Optimierungsparameter und wird automatisch erstellt.
+- Der Zugriffslink kann nur von dem entsprechenden Kunden genutzt werden und ist für eine begrenzte Zeit gültig.
 
 #### U3: Als Admin möchte ich ein Guthaben für jeden Kunden festlegen, damit sie nicht unbegrenzt Dateien hochladen können.
 ##### Akzeptanzkriterien
@@ -26,9 +26,9 @@ cssClass:
 - Der Kunde kann nur Dateien bis zum Erreichen dieses Limits hochladen.
 - Optional: Der Kunde wird über sein verbleibendes Guthaben informiert.
 
-#### U4: Als Kunde möchte ich über einen einfachen Link Dateien hochladen und automatisch optimieren lassen, ohne technische Details anpassen zu müssen.
+#### U4: Als Kunde möchte ich über einen einfachen personalisierten Zugriffslink Dateien hochladen und automatisch optimieren lassen, ohne technische Details anpassen zu müssen.
 ##### Akzeptanzkriterien
-- Ich kann den bereitgestellten Link öffnen und dort Dateien hochladen.
+- Ich kann den bereitgestellten personalisierten Zugriffslink öffnen und dort Dateien hochladen.
 - Die Dateien werden automatisch basierend auf den Vorgaben des Admins optimiert.
 - Der Upload und die Optimierung erfolgen nahtlos, ohne dass ich manuelle Einstellungen vornehmen muss.
 
@@ -38,10 +38,10 @@ cssClass:
 - Ich kann die optimierten Dateien direkt über einen Download-Button herunterladen.
 - Optional: Ich erhalte eine Benachrichtigung (z.B. per E-Mail), wenn die Dateien bereitstehen.
 
-#### U6: Als Admin möchte ich sicherstellen, dass die Links nur für einen bestimmten Zeitraum gültig sind, um Missbrauch und «Karteileichen» zu vermeiden.
+#### U6: Als Admin möchte ich sicherstellen, dass die personalisierten Zugriffslinks nur für einen bestimmten Zeitraum gültig sind, um Missbrauch und «Karteileichen» zu vermeiden.
 ##### Akzeptanzkriterien
-- Ich kann festlegen, dass die generierten Links nach einer bestimmten Zeit ablaufen (z.B. 2 Wochen).
-- Nach Ablauf des Links ist kein Zugriff auf die Optimierungsfunktion mehr möglich.
+- Ich kann festlegen, dass die generierten personalisierten Zugriffslink nach einer bestimmten Zeit ablaufen (z.B. 2 Wochen).
+- Nach Ablauf des personalisierten Zugriffslinks ist kein Zugriff auf die Optimierungsfunktion mehr möglich.
 
 #### U7: Als Admin möchte ich sehen, wie viel Guthaben ein Kunde noch hat, um den Überblick über die Nutzung zu behalten.
 ##### Akzeptanzkriterien
@@ -71,7 +71,7 @@ cssClass:
 #### U12: Als Admin möchte ich ein übersichliches und klar strukturiertes Dashboard, das mir ermöglicht, Vorgaben für die Optimierung und Guthaben übersichtlich zu verwalten.
 ##### Akzeptanzkriterien
 - Das Admin-Dashboard ist klar strukturiert und ermöglicht es mir, Vorgaben wie Dateigrößen, Auflösungen und Guthaben einfach anzupassen.
-- Alle relevanten Informationen (z.B. Kunden-Links, Nutzung des Guthabens) sind auf einen Blick einsehbar.
+- Alle relevanten Informationen (z.B. personalisierte Zugriffslinks, Nutzung des Guthabens) sind auf einen Blick einsehbar.
 
 #### U13: Als Kunde möchte ich bei Problemen oder Fehlermeldungen klare und hilfreiche Hinweise bekommen, um zu verstehen, was schiefgelaufen ist.
 ##### Akzeptanzkriterien
