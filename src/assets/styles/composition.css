@@ -95,7 +95,7 @@ section + section{
 /* Aside
 ############################################################################ */
 
-@media screen and (width >= 160ch){
+@media screen and (width >= 90rem){
   header:has(#page-navigation){
     #page-navigation{
         position: fixed;
