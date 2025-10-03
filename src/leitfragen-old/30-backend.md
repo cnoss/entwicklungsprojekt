@@ -7,8 +7,6 @@ cssClass: text
 ---
 ## Backend
 
-- Wie werden die großen Bildmengen zugänglich gemacht (Vorverarbeitung, Indizes, Thumbnails, Caching)?
-- Wie werden Zustände/Events zwischen Instanzen synchronisiert (Konsistenzanforderungen)?
 - Welche Technologien werden für das Backend eingesetzt und warum?
 - Welche externe APIs werden im System verwendet und wie werden sie implementiert?
 - Wie wird die Datenverarbeitung im Backend strukturiert?

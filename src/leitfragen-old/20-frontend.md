@@ -8,14 +8,13 @@ cssClass: text
 
 ## Frontend & Screendesign
 
-- Ist der Einstieg ≤ 30 Sek. ohne Erklärung möglich (Onboarding-Hinweise, klare affordances)?
-- Wie wird Multi-User ohne Konflikte erlebbar (Erkennbarkeit, Turn-Taking, Feedback)?
-- Unterstützt die Oberfläche Kiosk-/Vollbild-Betrieb (Start/Exit, ablenkungsfreie Darstellung)?
-- Sind Barrierefreiheits-Aspekte berücksichtigt (Kontrast, Fokusreihenfolge, skalierbarer Text, Alternativbedienung)?
-- Wie wird die Memorabilität erreicht (ästhetische Highlights, Variation statt Wiederholung)?
 - Welche Technologien werden verwendet und warum?
 - Wie wird die Interaktivität der Benutzeroberfläche umgesetzt?
+- Welche Maßnahmen werden ergriffen, um die Zugänglichkeit (Accessibility) der Anwendung sicherzustellen?
+- Wie wird das Frontend für verschiedene Geräte und Bildschirmgrößen (Responsiveness) optimiert?
 - Wie wird das Frontend mit den anderen Systemkomponenten kommunizieren?
+- Welche Maßnahmen werden zur Optimierung der Ladezeiten und Performance des Frontends ergriffen?
 - Wie wird die Benutzerführung im Interface gestaltet?
 - Welches Designkonzept liegt zugrunde und findet sich das Konzept im Frontend wieder?
+- Welche Designsysteme oder UI-Bibliotheken werden genutzt, um das Frontend konsistent zu gestalten?
 - Welcher Systematik folgen Raster, Farben, Schriften, Propotionen, Layout, Interaktionen und Übergänge?

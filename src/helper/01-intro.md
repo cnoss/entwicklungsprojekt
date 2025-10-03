@@ -1,5 +1,5 @@
 ---
-title: Erläuterungen
+title: Begriffe, Konzepte und Techniken
 snippet: text
 id: intro
 inToc: false

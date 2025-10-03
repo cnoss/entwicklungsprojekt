@@ -6,7 +6,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta property="og:title" content="Wintersemester 25/26 Web-Development Perspektive">
       <meta property="article:published_time" content="2025-10-3">
-      <meta property="article:timestamp" content="1759488096176">
+      <meta property="article:timestamp" content="1759489817833">
       <meta name="author" content="Christian Noss">
 
       <link rel="icon" type="image/png" sizes="32x32" href="/entwicklungsprojekt/assets/images/favicons/favicon-32x32.png">
@@ -41,7 +41,8 @@
       
       <ul class="item-list is-tight">
         <li><a href="/entwicklungsprojekt/">Home</a></li>
-        <li><a href="/entwicklungsprojekt/eigenes-thema-finden/">Eigenes Thema finden</a></li>
+        <li><a href="/entwicklungsprojekt/helper/">Begriffe, Konzepte und Techniken</a></li>
+<li><a href="/entwicklungsprojekt/eigenes-thema-finden/">Eigenes Thema finden</a></li>
 <li><a href="/entwicklungsprojekt/leitfragen/">Leitfragen</a></li>
 <li><a href="/entwicklungsprojekt/szenario-ep-2025/">Szenario Perspektive Web-Development 2025</a></li>
       </ul>
@@ -93,93 +94,22 @@
     <div class="text block text" id="intro">
       <h2>Wissenswertes</h2>
 <h3>Audits</h3>
-<p>Die Audits «meiner» Teams finden immer vor Ort und immer in der gesamten Perspektivgruppe statt. Allozieren Sie daher bitte ausreichend Zeit und Geduld für diese Termine. <i class="icofont-nerd-smile"></i></p>
+<p>Die Audits «meiner» Teams finden immer vor Ort und immer in der gesamten Perspektivgruppe statt. Allokieren Sie daher bitte ausreichend Zeit und Geduld für diese Termine. <i class="icofont-nerd-smile"></i></p>
 <h3>Architecture Decision Records</h3>
-<p>Nutzen Sie für ihre (technischen) Entscheidungen Architecture Decision Records. <strong>ADRs (Architecture Decision Records)</strong> sind <strong>dokumentierte Architekturentscheidungen</strong>, die während der Entwicklung eines Softwareprojekts getroffen werden. Sie bieten eine strukturierte Möglichkeit, Entscheidungen festzuhalten, die sich auf die Architektur und das Design eines Systems auswirken.</p>
-<p>Ein ADR beschreibt, welche Entscheidung getroffen wurde, warum sie getroffen wurde und welche Alternativen in Betracht gezogen wurden. Das Ziel ist, nachvollziehbar zu machen, wie und warum bestimmte (technische) Entscheidungen zu einem bestimmten Zeitpunkt sinnvoll waren. Dies hilft nicht nur aktuellen Teammitgliedern, sondern auch zukünftigen Entwicklern, die Entscheidungen zu verstehen und gegebenenfalls zu überdenken.</p>
-<p>Typische Elemente eines ADR:</p>
-<ul>
-<li><strong>Titel</strong> der Entscheidung</li>
-<li><strong>Kontext</strong> (Problemstellung)</li>
-<li><strong>Entscheidung</strong> (Was wurde entschieden?)</li>
-<li><strong>Alternativen</strong> (Welche Optionen wurden geprüft?)</li>
-<li><strong>Begründung</strong> (Warum wurde diese Entscheidung getroffen?)</li>
-<li><strong>Konsequenzen</strong> (Welche Auswirkungen hat die Entscheidung?)</li>
-</ul>
-<p>Ein <strong>Template für ADRs</strong> finden Sie hier:
-<a href="https://adr.github.io/madr/">ADR Template</a></p>
-<p>Das ist eine gute Grundlage, um eine konsistente und vollständige Dokumentation von Architekturentscheidungen sicherzustellen.</p>
-<p>Hier ein paar Beispiele auf dem Master Beiboot Projkt:</p>
-<ul>
-<li><a href="https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2024-gutentag2012/blob/main/docs/adr/0001-video-processing.md">Video Procssing </a></li>
-<li><a href="https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2023-finnge/blob/main/docs/adrs/004-sveltekit.md">SvelteKit als Static Site Generator</a></li>
-<li><a href="https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2022-mweiershaeuser/blob/main/adr/0004-deployment-und-hosting.md">Deployment und Hosting</a></li>
-<li><a href="https://github.com/mi-classroom/mi-web-technologien-beiboot-ss2022-twobiers/blob/main/adr/5_frontend_tooling_vite.md">Frontend Tooling - Vite</a></li>
-</ul>
+<p>Nutzen Sie für ihre (technischen) Entscheidungen <a href="/entwicklungsprojekt/helper/#adr">Architecture Decision Records</a>.</p>
 <h3>Backlogs</h3>
-<p>Nutzen Sie Backlogs für Ihre Tasks, User Stories und Issues. Ein <strong>Backlog</strong> ist eine <strong>priorisierte Liste von Aufgaben</strong>, Anforderungen oder Features, die in einem Projekt erledigt werden müssen. In agilen Projekten dient das Backlog als zentrale Sammelstelle für alle gewünschten Änderungen und neuen Funktionen. Es gibt zwei Hauptarten von Backlogs:</p>
-<ul>
-<li><strong>Product Backlog</strong>: Enthält alle User Stories, Features und Anforderungen für das gesamte Produkt.</li>
-<li><strong>Sprint Backlog</strong>: Umfasst die spezifischen Aufgaben und User Stories, die in einem bestimmten Sprint (Zeitfenster für die Entwicklung) bearbeitet werden.</li>
-</ul>
-<p>Das Backlog wird kontinuierlich gepflegt und priorisiert, um sicherzustellen, dass das Team an den wichtigsten und wertvollsten Aufgaben arbeitet. Es wird in der Regel vom Product Owner verwaltet und dient als Leitfaden für die Entwicklungsarbeit.</p>
-<p>Ein Infovideo zum Erstellen von einem <strong>Backlog</strong> finden Sie hier:
-<a href="https://www.youtube.com/watch?v=qT0VMdx7vuI">Building your backlog with Projects</a></p>
+<p>Nutzen Sie <a href="/entwicklungsprojekt/helper/#backlogs">Backlogs</a> für Ihre Tasks, User Stories und Issues.</p>
 <h3>Sprintplanung</h3>
-<p><strong>Sprintplanung</strong> ist ein zentrales Meeting im agilen Projektmanagement, das zu Beginn eines jeden <strong>Sprints</strong> (kurzer, zeitlich begrenzter Entwicklungszyklus) stattfindet. Ziel der Sprintplanung ist es, festzulegen, <strong>welche Aufgaben und User Stories im kommenden Sprint</strong> umgesetzt werden sollen. Das Team bewertet die Komplexität und den Arbeitsaufwand der Aufgaben und entscheidet gemeinsam, was realistisch in der festgelegten Sprintdauer (oft 1-4 Wochen) abgeschlossen werden kann.</p>
-<p>Wichtige Schritte der Sprintplanung:</p>
-<ol>
-<li><strong>Ziele des Sprints festlegen</strong>: Welche funktionalen Ziele sollen erreicht werden?</li>
-<li><strong>Auswahl von Aufgaben/User Stories</strong>: Der Product Owner priorisiert Aufgaben aus dem Backlog, das Team wählt Aufgaben basierend auf der eigenen Kapazität.</li>
-<li><strong>Schätzung des Arbeitsaufwands</strong>: Aufgaben werden in ihrer Komplexität geschätzt (z.B. durch Story Points oder Schätzung in Stunden).</li>
-<li><strong>Verteilung der Aufgaben</strong>: Teammitglieder übernehmen konkrete Aufgaben zur Umsetzung.</li>
-</ol>
-<p>Die Sprintplanung sorgt dafür, dass das Team fokussiert und effizient an den wichtigsten Features arbeitet.</p>
-<p>Ein hilfreicher Link zur Sprintplanung:
-<a href="https://www.atlassian.com/agile/scrum/sprint-planning">Atlassian Sprint Planning Guide</a></p>
-<p>Dieser Guide bietet praktische Anleitungen zur effektiven Durchführung der Sprintplanung.</p>
+<p><a href="/entwicklungsprojekt/helper/#sprintplanung">Sprintplanung</a> ist ein zentrales Meeting im agilen Projektmanagement, das zu Beginn eines jeden <strong>Sprints</strong> (kurzer, zeitlich begrenzter Entwicklungszyklus) stattfindet. Ziel der Sprintplanung ist es, festzulegen, <strong>welche Aufgaben und User Stories im kommenden Sprint</strong> umgesetzt werden sollen.</p>
 <h3>User Stories</h3>
-<p>Verfassen Sie User Stories für ihr Projekt. <strong>User Stories</strong> sind <strong>kurze, einfache Beschreibungen</strong> einer Funktion oder eines Features aus der Perspektive des Endbenutzers. Sie werden in agilen Projekten verwendet, um die Anforderungen eines Systems zu definieren. Eine User Story ist in der Regel in einer bestimmten Struktur formuliert:</p>
-<blockquote>
-<p><strong>Als [Nutzerrolle] möchte ich [Ziel], um [Nutzen] zu erreichen.</strong></p>
-</blockquote>
-<p>User Stories sind hilfreich, um die Bedürfnisse der Benutzer zu verstehen und den Fokus auf die Wertschöpfung zu legen. Sie sind oft bewusst kurz gehalten, um Raum für Diskussionen und Details während der Entwicklung zu lassen.</p>
-<p>Beispiel:</p>
-<blockquote>
-<p>Als Benutzer möchte ich mich mit meinem Google-Account anmelden, um schnell auf mein Konto zugreifen zu können.</p>
-</blockquote>
-<p>Typische Elemente einer User Story:</p>
-<ul>
-<li><strong>Nutzerrolle</strong> (Wer nutzt die Funktion?)</li>
-<li><strong>Ziel</strong> (Was soll erreicht werden?)</li>
-<li><strong>Nutzen</strong> (Warum ist das wichtig?)</li>
-</ul>
-<p>Ein <strong>Template für User Stories</strong> finden Sie hier:
-<a href="https://www.atlassian.com/agile/project-management/user-stories">User Story Template</a></p>
-<p>Das Template hilft, strukturierte und zielgerichtete User Stories zu erstellen.</p>
+<p>Verfassen Sie <a href="/entwicklungsprojekt/helper/#userstories">User Stories</a> für ihr Projekt.</p>
 <h3>Open Spaces</h3>
 <p>Ich erwarte Anwesenheit in den Open Spaces. Diese finden <em>hybrid</em> statt und starten immer um 13:00 Uhr.</p>
 <p><strong>Open Spaces</strong> sind <strong>offene, informelle Meetings</strong>, bei denen die Teilnehmer die Themen, Diskussionen und Aktivitäten selbst festlegen. In Projekten bieten sie eine Plattform, um spezifische Themen zu besprechen, neue Ideen zu entwickeln oder Herausforderungen zu diskutieren. Open Spaces sind besonders flexibel, weil sie es den Teilnehmern ermöglichen, sich aktiv an den Themen zu beteiligen, die für sie am relevantesten sind.</p>
 <p>In einem Projektkontext, insbesondere in agilen Entwicklungsprozessen, sind Open Spaces besonders wertvoll, weil sie <strong>Raum für spontanen Austausch und Feedback bieten</strong>. Hier können die Teams ihre Arbeit, Probleme oder Fragen direkt mit den Betreuern und anderen Beteiligten besprechen. Das Feedback der Betreuer ist entscheidend, um <strong>frühzeitig Verbesserungspotenziale</strong> zu identifizieren und sicherzustellen, dass das Projekt den Erwartungen entspricht. Die Offenheit des Formats fördert zudem den Wissensaustausch und ermöglicht es den Teams, Lösungen zu finden oder neue Ansätze zu diskutieren.</p>
 <p>Für das Projekt sind Open Spaces daher besonders wichtig, da die Möglichkeit besteht, <strong>zeitnah konstruktives Feedback</strong> von den Betreuern einzuholen, was wiederum hilft, das Projekt besser zu steuern und mögliche Fehler frühzeitig zu erkennen und zu beheben.</p>
 <h3>Projektplan</h3>
-<p>Der <strong>Projektplan</strong> ist ein wichtiger Bestandteil eines Entwicklungsprojekts, der die <strong>gesamte Planung und Strukturierung der Arbeit</strong> beschreibt. Er dient dazu, die wichtigsten Phasen, Aufgaben und Meilensteine des Projekts zu definieren und zu koordinieren. Der Plan umfasst in der Regel:</p>
-<ol>
-<li><strong>Ziele</strong>: Klare Definition dessen, was das Projekt erreichen soll.</li>
-<li><strong>Meilensteine</strong>: Wichtige Etappenziele, die während des Projekts erreicht werden müssen.</li>
-<li><strong>Zeitplan</strong>: Eine zeitliche Übersicht, wann welche Aufgaben erledigt werden sollen.</li>
-<li><strong>Ressourcen</strong>: Verteilung von Personal, technischen Mitteln oder anderen notwendigen Ressourcen.</li>
-<li><strong>Rollen und Verantwortlichkeiten</strong>: Wer ist für welche Aufgaben verantwortlich?</li>
-<li><strong>Risikomanagement</strong>: Mögliche Projektrisiken und Strategien, um diese zu minimieren.</li>
-</ol>
-<p>Der <strong>Projektplan in GitHub</strong> kann durch verschiedene Tools und Funktionen unterstützt und abgebildet werden, wie:</p>
-<ul>
-<li><strong>Issues</strong>: Dienen zur Erfassung einzelner Aufgaben oder User Stories. Diese können priorisiert und mit Fristen versehen werden.</li>
-<li><strong>Milestones</strong>: Mit GitHub-Milestones können große, zentrale Projektetappen abgebildet werden. Sie geben einen Überblick darüber, welche Issues erledigt werden müssen, um einen bestimmten Meilenstein zu erreichen.</li>
-<li><strong>Project Boards</strong>: GitHub bietet Kanban-Boards, die es ermöglichen, den Projektverlauf visuell darzustellen. Hier können Aufgaben in verschiedene Phasen unterteilt werden (z.B. „To Do“, „In Progress“, „Done“).</li>
-<li><strong>Pull Requests</strong>: Diese helfen, den Fortschritt einzelner Aufgaben in Bezug auf den Code zu verfolgen und sicherzustellen, dass die Implementierung den Projektanforderungen entspricht.</li>
-</ul>
-<p>Durch die Abbildung des Projektplans in GitHub wird der Fortschritt für alle Teammitglieder transparent. Es erleichtert die Zusammenarbeit, das <strong>Tracking des Projektfortschritts</strong> und die <strong>Anpassung von Prioritäten</strong> bei Bedarf.</p>
+<p>Der <a href="/entwicklungsprojekt/helper/#projektplan">Projektplan</a> ist ein wichtiger Bestandteil eines Entwicklungsprojekts, der die <strong>gesamte Planung und Strukturierung der Arbeit</strong> beschreibt.</p>
 <h3>Perspektiv Gruppe</h3>
 <p>Die Perspektivgruppe umfasst alle Teams der Perspektive «Web Development». Die Bedeutung der Perspektivgruppe liegt in der <strong>fachlichen Vertiefung und dem Feedback</strong>: Innerhalb dieser Gruppe findet der <strong>fachspezifische Austausch</strong> statt, wo die Projektteams ihre Entwürfe, Prototypen und Konzepte besprechen und das Feedback der Gruppe sowie der Betreuer erhalten. Dies ermöglicht es, <strong>fokusiert Feedback</strong> zu spezifischen Themenbereichen einzuholen und sicherzustellen, dass die entwickelten Lösungen die relevanten Anforderungen der jeweiligen Disziplin erfüllen.</p>
 

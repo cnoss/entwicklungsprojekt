@@ -1,4 +1,4 @@
-name: 11ty Full Build
+name: 11ty Deploy only
 
 on:
   push:

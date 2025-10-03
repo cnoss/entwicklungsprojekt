@@ -6,7 +6,7 @@
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta property="og:title" content="Leitfragen">
       <meta property="article:published_time" content="2025-10-3">
-      <meta property="article:timestamp" content="1759488096176">
+      <meta property="article:timestamp" content="1759489817833">
       <meta name="author" content="Christian Noss">
 
       <link rel="icon" type="image/png" sizes="32x32" href="/entwicklungsprojekt/assets/images/favicons/favicon-32x32.png">
@@ -41,7 +41,8 @@
       
       <ul class="item-list is-tight">
         <li><a href="/entwicklungsprojekt/">Home</a></li>
-        <li><a href="/entwicklungsprojekt/eigenes-thema-finden/">Eigenes Thema finden</a></li>
+        <li><a href="/entwicklungsprojekt/helper/">Begriffe, Konzepte und Techniken</a></li>
+<li><a href="/entwicklungsprojekt/eigenes-thema-finden/">Eigenes Thema finden</a></li>
 <li><a href="/entwicklungsprojekt/leitfragen/">Leitfragen</a></li>
 <li><a href="/entwicklungsprojekt/szenario-ep-2025/">Szenario Perspektive Web-Development 2025</a></li>
       </ul>
@@ -59,13 +60,18 @@
         </header>
         
     <div class="text block medium-hero" id="intro">
-      <p>Die folgenden Leitfragen helfen dabei, die verschiedenen Aspekte des Projekts systematisch zu durchdenken und fundierte Entscheidungen zu treffen. Sie klären die <strong>Architektur des Systems</strong>, indem sie den Nutzen, die Struktur und die Sicherheit analysieren. Im <strong>Frontend</strong> gewährleisten sie eine gute Benutzererfahrung, Zugänglichkeit und Performance. Im <strong>Backend</strong> fokussieren sie sich auf Technologien, Datensicherheit und Performanz. Die <strong>Datenfragen</strong> sichern die Struktur und Integrität der zu verarbeitenden Informationen. Ergänzende Fragen zu <strong>Sicherheit, Codequalität und Teamorganisation</strong> sorgen dafür, dass sensible Daten geschützt und die Zusammenarbeit effizient gestaltet wird.</p>
+      <p>Die folgenden Leitfragen helfen dabei, die verschiedenen Aspekte des Projekts systematisch zu durchdenken und fundierte Entscheidungen zu treffen. Gehen sie vor den Audits immer mal wieder diese Leitfragen durch und prüfen sie, ob sie Antworten auf die Fragen haben.</p>
 
     </div>
   
     <div class="text block text" id="intro">
       <h2>Architektur des Systems</h2>
 <ul>
+<li>Erfüllt die Lösung Web-First (Aufruf per URL, keine Zusatzinstallation, aktuelle Standardbrowser)?</li>
+<li>Wie wird verteilte Nutzung unterstützt (mehrere Anzeige-/Bedienstationen)? Wie bleibt der sichtbare Zustand konsistent?</li>
+<li>Welche Fallbacks greifen bei Netz-/Hardwareproblemen (Weiterlaufen, Reconnect, degradierte Modi)?</li>
+<li>Welche Rollen/Modi (Publikum, Operator, Moderation) sind vorgesehen und wie wird der Zugriff gesteuert?</li>
+<li>Wie wird die Lösung portabel für Events (Setup-Zeit, benötigte Ressourcen, Presets)?</li>
 <li>Welche Software-Architektur wird für das Projekt gewählt und warum?</li>
 <li>Welche Vorteile und Herausforderungen bietet die gewählte Architektur für das spezifische Projekt?</li>
 <li>Welche Systemkomponenten existieren und wie ist die Kommunikation zwischen den verschiedenen Systemkomponenten strukturiert?</li>
@@ -77,16 +83,27 @@
     <div class="text block text" id="intro">
       <h2>Frontend &amp; Screendesign</h2>
 <ul>
+<li>Ist der Einstieg ≤ 30 Sek. ohne Erklärung möglich (Onboarding-Hinweise, klare affordances)?</li>
+<li>Wie wird Multi-User ohne Konflikte erlebbar (Erkennbarkeit, Turn-Taking, Feedback)?</li>
+<li>Unterstützt die Oberfläche Kiosk-/Vollbild-Betrieb (Start/Exit, ablenkungsfreie Darstellung)?</li>
+<li>Sind Barrierefreiheits-Aspekte berücksichtigt (Kontrast, Fokusreihenfolge, skalierbarer Text, Alternativbedienung)?</li>
+<li>Wie wird die Memorabilität erreicht (ästhetische Highlights, Variation statt Wiederholung)?</li>
 <li>Welche Technologien werden verwendet und warum?</li>
 <li>Wie wird die Interaktivität der Benutzeroberfläche umgesetzt?</li>
-<li>Welche Maßnahmen werden ergriffen, um die Zugänglichkeit (Accessibility) der Anwendung sicherzustellen?</li>
-<li>Wie wird das Frontend für verschiedene Geräte und Bildschirmgrößen (Responsiveness) optimiert?</li>
 <li>Wie wird das Frontend mit den anderen Systemkomponenten kommunizieren?</li>
-<li>Welche Maßnahmen werden zur Optimierung der Ladezeiten und Performance des Frontends ergriffen?</li>
 <li>Wie wird die Benutzerführung im Interface gestaltet?</li>
 <li>Welches Designkonzept liegt zugrunde und findet sich das Konzept im Frontend wieder?</li>
-<li>Welche Designsysteme oder UI-Bibliotheken werden genutzt, um das Frontend konsistent zu gestalten?</li>
 <li>Welcher Systematik folgen Raster, Farben, Schriften, Propotionen, Layout, Interaktionen und Übergänge?</li>
+</ul>
+
+    </div>
+  
+    <div class="text block text" id="intro">
+      <h2>Interaktion</h2>
+<ul>
+<li>Welche externen Controller werden unterstützt (berührungslos, physisch, Mobilgerät) und wie erfolgt deine etwaige Kopplung vor Ort (QR/Code, Zeit bis zum Start)?</li>
+<li>Wie sind Interaktionen gestaltet und warum genau so? Welche Alternative standen/ stehen zur Verfügung?</li>
+<li>Wie wird gemeinsame Interaktion mehrerer Personen koordiniert (Prioritäten, Slots)?</li>
 </ul>
 
     </div>
@@ -94,6 +111,8 @@
     <div class="text block text" id="intro">
       <h2>Backend</h2>
 <ul>
+<li>Wie werden die großen Bildmengen zugänglich gemacht (Vorverarbeitung, Indizes, Thumbnails, Caching)?</li>
+<li>Wie werden Zustände/Events zwischen Instanzen synchronisiert (Konsistenzanforderungen)?</li>
 <li>Welche Technologien werden für das Backend eingesetzt und warum?</li>
 <li>Welche externe APIs werden im System verwendet und wie werden sie implementiert?</li>
 <li>Wie wird die Datenverarbeitung im Backend strukturiert?</li>
@@ -105,15 +124,40 @@
     <div class="text block text" id="intro">
       <h2>Daten</h2>
 <ul>
+<li>Wie werden Quelle/Urheber:in pro Medium nachvollziehbar angezeigt (Attribution, vereinbarte Zitierweise)?</li>
+<li>Wie wird die Sichtbarkeit des Datengebers (KDTS) im Produkt, in Credits und in der Doku sichergestellt (ohne Overbranding)?</li>
 <li>Wie sind die zu vearbeitenden Daten strukturiert und warum?</li>
-<li>Welche Technologien zur Persistierung der Daten werden eingesetzt und warum?</li>
-<li>Welche Mechanismen zur Datenvalidierung und Datenintegrität werden implementiert?</li>
 </ul>
 
     </div>
   
     <div class="text block text" id="intro">
-      <h2>Weitere Fragen</h2>
+      <h2>Sicherheit, Datenschutz &amp; Recht</h2>
+<ul>
+<li>Welche Consent-Flows gibt es für Kamera/Sensorik? Welche funktionalen Alternativen bestehen ohne Consent?</li>
+<li>Welche personenbezogenen Daten werden vermieden, minimiert oder pseudonymisiert?</li>
+<li>Sind Lizenzen für Medien/Code/Fonts/Sounds geklärt und dokumentiert?</li>
+</ul>
+<h2>Codequalität, Team &amp; Zusammenarbeit</h2>
+<ul>
+<li>Welche ADRs (Architecture Decision Records) werden geführt (Auslöser, Template, Ablage)? Wie fließen sie in Reviews ein?</li>
+<li>Wie wird Qualität gesichert (Smoke-/E2E-Tests, Code-Reviews, Definition of Done)?</li>
+<li>Gibt es eine CI/CD-Pipeline (Preview/Stage/Prod, Rollback-Strategie)?</li>
+</ul>
+<h2>Betrieb</h2>
+<ul>
+<li>Gibt es ein Runbook (Aufbau, Start, Reset, Troubleshooting) und einen Ressourcensteckbrief (Fläche, Strom, Netzwerk, Licht, Lautstärke)?</li>
+<li>Wie wird Monitoring für den Live-Betrieb bereitgestellt (Status, Nutzung, Fehlerindikatoren – anonymisiert)?</li>
+<li>Sind Presets/Szenen ohne Codeänderung wählbar (Operator-Panel)?</li>
+<li>Ist der Supportaufwand vor Ort gering (Selbsthilfe, Neustartfunktion, Setup-Check)?</li>
+</ul>
+<h2>Dokumentation &amp; Kommunikation</h2>
+<ul>
+<li>Wie wird die filmische Dokumentation (ca. 15 Min.) strukturiert (Idee → Prototypen → Umsetzung → Reflexion) und rechtlich publizierbar gemacht?</li>
+<li>Welche Zwischenergebnisse werden dokumentiert (Prototypen, Tests, Entscheidungen) – wo und in welcher Tiefe?</li>
+<li>Gibt es eine Projektseite mit Kurzbeschreibung, Credits (inkl. KDTS), Links und Kontakt?</li>
+</ul>
+<h2>Weitere Fragen</h2>
 <ul>
 <li>Wie wird die Vertraulichkeit und Integrität sensibler Daten, wie Passwörter oder personenbezogene Daten, sichergestellt?</li>
 <li>Welche sicherheitsrelevanten Fragen wurden im Laufe des Projekts entdeckt und wie wurden sie beantwortet?</li>
