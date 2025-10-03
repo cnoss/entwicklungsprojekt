@@ -22,12 +22,6 @@ Damit soll eine Installation konzipiert und umgesetzt werden, die nicht nur auf 
 
 Die Installation soll **interaktiv und erlebbar** sein – ein Eyecatcher bei Veranstaltungen wie **Nacht der Technik**, **Tag der offenen Tür** oder auf **Messen**. Denkbar ist aber auch ein **dauerhafter Einsatz** (z.B. im Foyer).
 
-Neben der Konzeption und Umsetzung ist auch der **Prozess selbst Teil des Projekts**. Dazu gehört:
-
-* Inspiration durch Recherche (ähnliche Installationen, Museen, Kunstprojekte).
-* Entwicklung und Erprobung von Proof of Concepts.
-* Dokumentation von Zwischenergebnissen und Tests.
-* Erstellung einer sympathischen, gut nachvollziehbaren **filmischen Dokumentation (ca. 15 Minuten)**, die zeigt, wie Ideen entstanden, ausprobiert und umgesetzt wurden.
 
 ## Projekt-Constraints
 
