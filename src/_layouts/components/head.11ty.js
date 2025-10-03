@@ -3,6 +3,7 @@ exports.getHeader = (eleventy, data) => {
   const currentMonth = new Date().getMonth() +1;
   const currentYear = new Date().getFullYear();
   const publishDate = `${currentYear}-${currentMonth}-${currentDay}`;
+  const timestamp = Date.now();
 
   return `
     <head>
@@ -10,6 +11,7 @@ exports.getHeader = (eleventy, data) => {
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta property="og:title" content="${data.title}">
       <meta property="article:published_time" content="${publishDate}">
+      <meta property="article:timestamp" content="${timestamp}">
       <meta name="author" content="Christian Noss">
 
       <link rel="icon" type="image/png" sizes="32x32" href="${ '/assets/images/favicons/favicon-32x32.png'}">
@@ -22,6 +24,7 @@ exports.getHeader = (eleventy, data) => {
       <meta name="theme-color" content="#ffffff">
 
       <link href="${eleventy.htmlBaseUrl('/compiled-assets/styles/combined-styles.css')}" rel="stylesheet">
+      <link href="/compiled-assets/styles/combined-styles.css" rel="stylesheet">
     
       <script>
         const settings = {
