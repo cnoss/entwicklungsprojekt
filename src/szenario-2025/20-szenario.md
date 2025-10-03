@@ -33,7 +33,7 @@ Neben der Konzeption und Umsetzung ist auch der **Prozess selbst Teil des Projek
 
 ### 1. Inhalte & Material
 
-* **Bildquelle**: Nutzung einder der beiden Bildsammlungen des KDTS-Labors (insg. >10 Mio. Fotos).
+* **Bildquelle**: Nutzung eines der beiden Bildsammlungen des KDTS-Labors (insg. >10 Mio. Fotos).
 * **Künstlerisch-technischer Umgang**: kreative Exploration und innovative Repräsentation der Bilder.
 
 ### 2. Zielsetzung & Nutzungskontext
@@ -56,7 +56,7 @@ Neben der Konzeption und Umsetzung ist auch der **Prozess selbst Teil des Projek
 
 * **Recherche**: Inspiration durch bestehende Installationen und Kunst-/Technikprojekte.
 * **Iterativer Prozess**: Proof of Concepts entwickeln, testen und dokumentieren.
-* **Dokumentation**: ADR, filmische Schulterblicke vor den Audits für die Dozent:innen.
+* **Dokumentation**: [ADR](/helper/#adr), filmische [Schulterblicke](/helper/#schulterblick) vor den Audits für die Dozent:innen.
 * **Filmische Dokumentation**: über den gesamten Projektprozess (Ideen, Experimente, Umsetzung) für die interessierte Öffentlichkeit. Der Film muss veröffentlicht werden können. 
 
 ### 6. Kreativer Anspruch
