@@ -23,7 +23,6 @@ exports.getHeader = (eleventy, data) => {
       <meta name="msapplication-TileColor" content="#da532c">
       <meta name="theme-color" content="#ffffff">
 
-      <link href="${eleventy.htmlBaseUrl('/compiled-assets/styles/combined-styles.css')}" rel="stylesheet">
       <link href="/compiled-assets/styles/combined-styles.css" rel="stylesheet">
     
       <script>

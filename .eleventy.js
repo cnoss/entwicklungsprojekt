@@ -233,6 +233,11 @@ module.exports = function (eleventyConfig) {
     });
   }
 
+  console.log(`Path Prefix: "${pathPrefix}" (env: ${process.env.ELEVENTY_ENV})`);
+
+  /* Return
+  ########################################################################## */
+
   return {
     dir: {
       includes: '_components',
